@@ -74,7 +74,7 @@ public class Driver {
 		records[9] = rec10;
 		
 		//ask the user to enter the name of a title of the record
-		System.out.print("Enter a title: ");
+		System.out.print("Enter a title:\t");
 		//read the input
 		String titleInput = input.nextLine();
 		
@@ -89,7 +89,7 @@ public class Driver {
 		
 		//print the averages
 		double lengthAverage = getAverageOfLength(records);
-		System.out.println("\nThe average of lengths is " + lengthAverage);
+		System.out.println("\nThe average of lengths is " + lengthAverage + "[s]");
 		double rankAverage = getAverageOfRank(records);
 		System.out.println("The average of ranks is " + rankAverage);
 		
