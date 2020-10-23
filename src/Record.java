@@ -52,7 +52,7 @@ public class Record {
 	}
 	
 	public void setTitle(String title) {
-		if(!title.isEmpty() && !title.equalsIgnoreCase(null)) {
+		if(!title.isEmpty() || !title.equalsIgnoreCase(null)) {
 			this.title = title;
 		}
 	}

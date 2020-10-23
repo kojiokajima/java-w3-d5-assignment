@@ -4,11 +4,11 @@ public class Driver {
 
 	//method to print just one object which pass as an argument
 	public static void printSongInformation(Record record) {
-		System.out.println("ID: " + record.getId() +
-							"\nTitle: " + record.getTitle() +
-							"\nSinger Name: " + record.getSingerName() +
-							"\nLength: " + record.getLength() +
-							"\nRank: " + record.getRank());
+		System.out.println("ID:\t\t" + record.getId() +
+							"\nTitle:\t\t" + record.getTitle() +
+							"\nSinger Name:\t" + record.getSingerName() +
+							"\nLength:\t\t" + record.getLength() +
+							"\nRank:\t\t" + record.getRank());
 	}
 	
 	//method to iterate through the array and find the index of record for the title
@@ -39,7 +39,6 @@ public class Driver {
 		double sum = 0.0;
 		for (int i = 0; i < records.length; i++) {
 			sum += records[i].getRank();
-			System.out.println(records[i].getRank());
 		}
 		
 		return sum / records.length;
@@ -51,15 +50,15 @@ public class Driver {
 		
 		//at least create 7 objects
 		Record rec1 = new Record("Closer", "The Chainsmokers", 246, 3);
-		Record rec2 = new Record("Paris", "The Chainsmokers", 216, 8);
-		Record rec3 = new Record("Tie Me Down", "Gryffin", 248, 5);
-		Record rec4 = new Record("Permanent", "Kygo", 228, 7);
+		Record rec2 = new Record("Paris", "The Chainsmokers", 216, 4);
+		Record rec3 = new Record("Tie Me Down", "Gryffin", 248, 1);
+		Record rec4 = new Record("Permanent", "Kygo", 228, 2);
 		Record rec5 = new Record("Kids in Love", "Kygo", 258, 2);
-		Record rec6 = new Record("Here With Me", "Marshmello",156, 4);
-		Record rec7 = new Record("Funny", "Zedd", 222, 1);
-		Record rec8 = new Record("All Nighter", "Dan + Shay", 204, 9);
-		Record rec9 = new Record("Keeps Me Right", "Tall Heights", 228, 10);
-		Record rec10 = new Record("Colors", "Halsey", 246, 6);
+		Record rec6 = new Record("Here With Me", "Marshmello",156, 3);
+		Record rec7 = new Record("Funny", "Zedd", 222, 5);
+		Record rec8 = new Record("All Nighter", "Dan + Shay", 204, 4);
+		Record rec9 = new Record("Keeps Me Right", "Tall Heights", 228, 1);
+		Record rec10 = new Record("Colors", "Halsey", 246, 2);
 		
 		//create array and add these objects to array
 		Record[] records = new Record[10];
@@ -90,7 +89,7 @@ public class Driver {
 		
 		//print the averages
 		double lengthAverage = getAverageOfLength(records);
-		System.out.println("The average of lengths is " + lengthAverage);
+		System.out.println("\nThe average of lengths is " + lengthAverage);
 		double rankAverage = getAverageOfRank(records);
 		System.out.println("The average of ranks is " + rankAverage);
 		
